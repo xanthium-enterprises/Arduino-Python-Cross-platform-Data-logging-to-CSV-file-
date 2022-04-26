@@ -9,6 +9,12 @@
  - A Python 3.x.x script running on the PC will receive the data and log the time stamped data into a CSV file on the disk.  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## CSV Logging
+
+ - ![Python Data Logging Software](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/python-data-logging-software-win32.jpg)
+ - ![Excel Generated Graph](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/temperature-data-logger-python-output.jpg)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Online Tutorial 
 
  - [Learn To build a Arduino CSV Data Logging system using Python and Pyserial](https://www.xanthium.in/python-data-acquisition-system-daq-arduino-log-to-csv-file)  
@@ -18,8 +24,9 @@
 ## Hardware Setup
 
 
-![](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/arduino-python-pc-temperature-data-logger.jpg)
+ - ![](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/arduino-python-pc-temperature-data-logger.jpg)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  
