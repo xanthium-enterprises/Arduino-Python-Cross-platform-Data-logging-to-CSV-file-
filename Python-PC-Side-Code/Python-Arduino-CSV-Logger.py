@@ -108,7 +108,7 @@ while sentry:
     # create a string to write into the file
     log_file_text1 = str(log_count) + seperator + log_date + seperator + log_time + seperator
     log_file_text2 = tempvalueslist[0] + seperator + tempvalueslist[1] + seperator +tempvalueslist[2]+ seperator+tempvalueslist[3]
-    log_file_text3 =  log_file_text1 +  log_file_text2 + '\n'
+    log_file_text3 = log_file_text1 +  log_file_text2 + '\n'
     
     # write to file .csv
     with open(filename,'a') as LogFileObj:
@@ -121,5 +121,7 @@ while sentry:
 
 #exit from the loop and close the Serial port when sentry = False
 SerialObj.close()          # Close the port
+
 print('Data logging Terminated')
 print('====================================')
+

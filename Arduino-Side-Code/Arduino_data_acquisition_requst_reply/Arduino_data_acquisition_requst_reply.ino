@@ -12,20 +12,21 @@ int AnalogPin_AN4 = A3;    // select the input pin for lm35
 
 void setup() 
 {
-   Serial.begin(9600); //Data will be send to PC
+   Serial.begin(9600); //Data will be send to PC @9600bps
 
 }
 
 void loop() 
 {
-   char ReceivedByte  = "0";
-   float temp1,temp2,temp3,temp4 = 0;
+   char ReceivedByte  = "0"; //
    
-   if (Serial.available() > 0) 
+   float temp1,temp2,temp3,temp4 = 0.0;
+   
+   if (Serial.available() > 0) //Wait for data reception
    {
-     ReceivedByte = Serial.read();
+     ReceivedByte = Serial.read();//Read data from Arduino Serial UART buffer
 
-     if (ReceivedByte == '$')
+     if (ReceivedByte == '$')//Check received byte is $
      {
       temp1 = ReadAnalogChannel(AnalogPin_AN1);
       temp2 = ReadAnalogChannel(AnalogPin_AN2);
@@ -52,24 +53,31 @@ void loop()
 
 }
 
+// float ReadAnalogChannel(int analogpin)
+// Read's value from the specified Analog pin (int analogpin),
+// Each pin read three times in aloop to an array and averages the temperature value
+// returns the temperature value in a float variable.
 
 float ReadAnalogChannel(int analogpin)
 {
-  float SensorValue[3] = {0.0,0.0,0.0};
-  float AvgSensorValue = 0.0;
-  float temperature = 0.0;
-  
+  float SensorValue[3] = {0.0,0.0,0.0}; // Array to store 3 consecutive values 
+  float AvgSensorValue = 0.0;           // Variable to store the average of 3 consecutive analog  values 
+  float temperature = 0.0;              // Variable to store temperature in Celsius
+
+  // Make three consecutivereadings from the specified analog pin
   for(int i =0;i<3;i++)
   {
-    SensorValue[i] = analogRead(analogpin);
+    SensorValue[i] = analogRead(analogpin); //Read 3 consecutive analog  values and store it in array
     delay(10);
   }
 
+  //Calculate the average of three sensor values
   AvgSensorValue = ((SensorValue[0] + SensorValue[1] + SensorValue[2]) /3);
 
+  //Convert the average ADC value to temperature in Celsius 
   temperature = AvgSensorValue * (5.0/1024.0);// 10 bit adc,1024 divisons,
   temperature = temperature/3.44;
   temperature = temperature *100;
   
-  return temperature;
+  return temperature; //return calculated temperature in celsius,float variable
 }
