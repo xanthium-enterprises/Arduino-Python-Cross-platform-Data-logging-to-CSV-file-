@@ -17,12 +17,14 @@
 import serial #PySerial needs to be installed in your system
 import time   # for Time 
 
+
 # Generate file name using Current Date and Time
 
 current_local_time = time.localtime() #Get Current date time
 filename           = time.strftime("%d_%B_%Y_%Hh_%Mm_%Ss",current_local_time)# 24hour clock format
 filename           = 'ard_'+ filename + '_daq_log.csv'
 print(f'Created Log File -> {filename}')
+
 
 #Create a csv File header
 
@@ -42,9 +44,11 @@ time.sleep(3)   # Only needed for Arduino,For AVR/PIC/MSP430 & other Micros not 
                 # opening the serial port from Python will reset the Arduino.
                 # Both Arduino and Python code are sharing Com11 here.
                 # 3 second delay allows the Arduino to settle down.
+                
+#Log continously to a file by querying the arduino                 
 while 1:
     BytesWritten = SerialObj.write(b'$') #transmit $,to get temperture values from Arduino,
-    time.sleep(0.10)
+    time.sleep(0.10) # 10ms delay
     ReceivedString = SerialObj.readline()       # Change to receive  mode to get the data from arduino,Arduino sends \n to terminate
     ReceivedString = str(ReceivedString,'utf-8')# Convert bytes to string of encoding utf8
     tempvalueslist = ReceivedString.split('-')  # Split the string into 4 values at '-'  
