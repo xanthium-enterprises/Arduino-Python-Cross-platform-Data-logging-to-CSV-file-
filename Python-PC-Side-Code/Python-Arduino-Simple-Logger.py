@@ -1,6 +1,9 @@
 # Logs the Temperature values in a CSV file
 # CSV file name generated from current time and date
 
+# No Sinal Handler code for catching SIGINT interrupt
+
+
 # Sends the $ character to the Arduino,
 # Arduino sends back the temperature values from all the 4 sensors at atime
 # The Python script uses a while loop to query the arduino continously

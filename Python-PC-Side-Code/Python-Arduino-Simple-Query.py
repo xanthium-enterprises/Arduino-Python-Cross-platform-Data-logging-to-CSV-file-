@@ -1,10 +1,12 @@
 # Displays the Temperature values on Python Command line >>>
+# No logging to file just Display
 
 # Sends the $ character to the Arduino,
 # Arduino sends back the temperature values from all the 4 sensors at atime
 # The Python script uses a while loop to query the arduino continously
 # Use CTRL + C to stop execution of the Script
 
+# No Sinal Handler code for catching SIGINT interrupt
 
 import serial #PySerial needs to be installed in your system
 import time   # for Time 
