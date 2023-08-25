@@ -15,6 +15,16 @@
  - ![Excel Generated Graph](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/temperature-data-logger-python-output.jpg)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Youtube Tutorial
+
+- [Learn To build a Arduino CSV Data Acquisition and Logging system using Python and Pyserial](https://www.youtube.com/watch?v=hpHv4Iux6_s)  
+- [Build a Linux Data Acquisition and Logging system to csv using Python and Arduino](https://www.youtube.com/watch?v=OWVQXgEMSEE) 
+- [Build the hardware for Arduino 4 channel Data Acquisition and Logging system to csv using Python](https://www.youtube.com/watch?v=OrigmVd3aYI)  
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Online Tutorial 
 
  - [Learn To build a Arduino CSV Data Logging system using Python and Pyserial](https://www.xanthium.in/python-data-acquisition-system-daq-arduino-log-to-csv-file)  
