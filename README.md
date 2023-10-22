@@ -1,7 +1,7 @@
 ![](https://www.xanthium.in/sites/default/files/inline-images/csv-data-logger-linux-arduino.png)
 # Arduino Python Cross platform Data logging to CSV file 
 
-![Build your own Data Acquisition System (.csv file) using Python and Arduino](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/arduino-python-pc-data-logger-system.jpg)
+![Build your own Data Acquisition System (.csv file) using Python and Arduino](https://www.xanthium.in/sites/default/files/inline-images/arduino-python-pc-data-logger-system.jpg)
 
  - Learn to build a low cost data logging system using Python and Arduino UNO board that will log and save data to  a CSV (Comma Separated Values) file on the disk.
 
