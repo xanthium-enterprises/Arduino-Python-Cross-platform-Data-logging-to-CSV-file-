@@ -1,3 +1,4 @@
+![](https://www.xanthium.in/sites/default/files/inline-images/csv-data-logger-linux-arduino.png)
 # Arduino Python Cross platform Data logging to CSV file 
 
 ![Build your own Data Acquisition System (.csv file) using Python and Arduino](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/arduino-python-pc-data-logger-system.jpg)
@@ -11,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## CSV Logging
 
- - ![Python Data Logging Software](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/python-data-logging-software-win32.jpg)
+ - ![Python Data Logging Software](https://www.xanthium.in/sites/default/files/inline-images/python-data-logging-software-win32_0.jpg)
  - ![Excel Generated Graph](https://www.xanthium.in/sites/default/files/site-images/arduino-data-log-csv-sqlite-python/temperature-data-logger-python-output.jpg)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
